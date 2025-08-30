@@ -18,7 +18,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://jeetkulkarni200221_db_user:LNgLyltAXxuOPd1V@cluster0.vvureoj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+// mongoose.connect("mongodb+srv://jeetkulkarni200221_db_user:LNgLyltAXxuOPd1V@cluster0.vvureoj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect("mongodb+srv://jeetkulkarni200221_db_user:LNgLyltAXxuOPd1V@cluster0.vvureoj.mongodb.net/Daily_journal?retryWrites=true&w=majority&appName=Cluster0");
 
 const postSchema = mongoose.Schema(
   {
